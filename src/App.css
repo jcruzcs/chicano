@@ -33,4 +33,7 @@
   padding: 1rem;
   background-color: #f9f9f9; /* Optional: Add a background color for the text section */
   border-radius: 8px; /* Optional: Add rounded corners */
+  width: 100px;
+  max-width: 600px; /* Limit the maximum width of the text box */
+  min-width: 300px; /* Optional: Set a minimum width for the text box */
 }
