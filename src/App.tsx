@@ -6,15 +6,17 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <main>{/* Main content sections */
-      
-      <img src={ray1} alt="ray1" className="ray1" />
-      
-      }</main>
-      
-
+      <main className="main-content">
+        <img src={ray1} alt="ray1" className="ray1" />
+        <div className="text-section">
+          <h2>Ramon Barrera</h2>
+          <p>
+          Chicano Artist. Illustration. Animation. Character Design. Portraits
+          </p>
+        </div>
+      </main>
       <footer className="site-footer">
-        <p>&copy; 2024 El Chicano Artist. All rights reserved.</p>
+        <p>&copy; 2024 El Chino Artist. All rights reserved.</p>
       </footer>
     </div>
   );

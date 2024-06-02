@@ -1,29 +1,36 @@
-/* Basic reset for consistent styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* src/App.css */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-}
-
-
-/* Main content styling */
-main {
-  padding: 2rem;
-}
-
-/* Footer styling */
 .site-footer {
-  background-color: rgb(0, 0, 0);
-  color: #fff;
   text-align: center;
   padding: 1rem;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  background-color: #000;
+  color: #fff;
+  margin-top: auto;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  margin-top: auto;
+}
+
+.ray1 {
+  max-width: 100%;
+  width: 400px; /* Set a fixed width for the image */
+  height: auto;
+  margin-right: 2rem; /* Space between the image and the text */
+}
+
+.text-section {
+  flex: 1; /* Take the remaining space */
+  padding: 1rem;
+  background-color: #f9f9f9; /* Optional: Add a background color for the text section */
+  border-radius: 8px; /* Optional: Add rounded corners */
 }
