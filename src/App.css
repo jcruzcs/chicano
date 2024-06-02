@@ -26,6 +26,7 @@
   width: 400px; /* Set a fixed width for the image */
   height: auto;
   margin-right: 2rem; /* Space between the image and the text */
+  margin-left: auto;
 }
 
 .text-section {
@@ -36,4 +37,5 @@
   width: 100px;
   max-width: 600px; /* Limit the maximum width of the text box */
   min-width: 300px; /* Optional: Set a minimum width for the text box */
+  margin-right: auto;
 }
