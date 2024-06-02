@@ -1,0 +1,106 @@
+/* Basic reset for consistent styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styling */
+.site-header {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.site-title {
+  font-size: 3rem;
+  font-family: 'Lobster', cursive;
+}
+
+.title-el {
+  color: green;
+}
+
+.title-chinoartist {
+  color: white; /* Adjust if you want a different color for 'chino' */
+}
+
+.title-artist {
+  color: red;
+}
+
+/* Navigation styling */
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav li {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.nav-button.about a {
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
+
+.nav-button.portfolio a {
+  background-color: white;
+  color: brown;
+  padding: 10px;
+}
+
+.nav-button.contact a {
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
