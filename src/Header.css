@@ -28,6 +28,7 @@ body {
 .site-title {
   font-size: 3rem;
   font-family: 'Lobster', cursive;
+  width: auto;
 }
 
 .title-el {
