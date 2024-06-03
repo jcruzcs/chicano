@@ -3,8 +3,8 @@
 function Contact() {
   return (
     <div>
-      <h2>Contact</h2>
-      <p>This is the Contact page.</p>
+      <h2>Email</h2>
+      <p>ramon.barrera1325@gmail.com</p>
     </div>
   );
 }
