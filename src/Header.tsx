@@ -1,4 +1,5 @@
 // src/Header.jsx
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 function Header() {
@@ -12,19 +13,19 @@ function Header() {
       <nav className="site-nav">
         <ul>
           <li>
-            <button className="nav-button about">
-              <a href="#about">About</a>
-            </button>
+            <Link to="/" className="nav-button about">
+              About
+            </Link>
           </li>
           <li>
-            <button className="nav-button portfolio">
-              <a href="#portfolio">Portfolio</a>
-            </button>
+            <Link to="/portfolio" className="nav-button portfolio">
+              Portfolio
+            </Link>
           </li>
           <li>
-            <button className="nav-button contact">
-              <a href="#contact">Contact</a>
-            </button>
+            <Link to="/contact" className="nav-button contact">
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>

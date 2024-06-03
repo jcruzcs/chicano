@@ -23,16 +23,13 @@ body {
   align-items: center;
   width: 100%;
   box-sizing: border-box;
- 
-  margin-bottom: auto;
-  margin-right: auto;
-  margin-left: auto;
+  flex-wrap: wrap;
 }
 
 .site-title {
   font-size: 3rem;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  width: auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  white-space: nowrap;
 }
 
 .title-el {
@@ -40,7 +37,7 @@ body {
 }
 
 .title-chinoartist {
-  color: white; /* Adjust if you want a different color for 'chino' */
+  color: white; /* Adjust if you want a different color for 'chicano' */
 }
 
 .title-artist {
@@ -54,6 +51,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .site-nav li {
@@ -64,48 +62,66 @@ body {
 }
 
 .site-nav a {
-  color: #fff;
   text-decoration: none;
   font-size: 1rem;
-}
-
-.site-nav a:hover {
-  text-decoration: underline;
-}
-
-.nav-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  padding: 10px; /* Ensure padding is consistent */
+}
+
+.nav-button {
   background: none;
   border: none;
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  color: inherit;
 }
 
-.nav-button a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  padding: 0 1rem;
-}
-
-.nav-button.about a {
+.nav-button.about {
   background-color: green;
   color: white;
-  padding: 10px;
 }
 
-.nav-button.portfolio a {
+.nav-button.portfolio {
   background-color: white;
   color: brown;
-  padding: 10px;
 }
 
-.nav-button.contact a {
+.nav-button.contact {
   background-color: red;
   color: white;
-  padding: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 1.5rem; /* Reduce title size on smaller screens */
+  }
+  
+  .site-nav ul {
+    justify-content: center; /* Center navigation items */
+    width: 100%; /* Ensure navigation items take full width */
+  }
+  
+  .nav-button {
+    padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+    font-size: 0.875rem; /* Reduce font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .site-title {
+    font-size: 1.2rem; /* Further reduce title size on very small screens */
+  }
+  
+  .nav-button {
+    padding: 0.5rem 0.5rem; /* Adjust padding for very small screens */
+    font-size: 0.75rem; /* Further reduce font size for very small screens */
+  }
+  
+  .site-header {
+    padding: 0.5rem 1rem; /* Reduce header padding on very small screens */
+  }
 }

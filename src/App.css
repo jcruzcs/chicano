@@ -1,9 +1,52 @@
 /* src/App.css */
 
+/* Basic reset for consistent styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
 .App {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem;
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between; /* Ensure space between items */
+}
+
+.ray1 {
+  width:auto;
+  max-width: 300px;
+  height: auto;
+  margin-right: 2rem; /* Space between the image and the text */
+}
+
+.text-section {
+  flex: 1;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 600px;
+  min-width: 0px;
+  width: 100%;
+  text-align: center;
 }
 
 .site-footer {
@@ -13,31 +56,11 @@
   color: #fff;
   margin-top: auto;
   width: 100%;
-  
 }
-
-.main-content {
+.home-content {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  padding: 2rem;
-  margin-top: auto;
-}
-
-.ray1 {
-  max-width: 100%;
-  width: 400px; /* Set a fixed width for the image */
-  height: auto;
-  margin-right: 2rem; /* Space between the image and the text */
-  margin-left: auto;
-}
-
-.text-section {
-  flex: 1; /* Take the remaining space */
-  padding: 1rem;
-  background-color: #f9f9f9; /* Optional: Add a background color for the text section */
-  border-radius: 8px; /* Optional: Add rounded corners */
-  width: 100px;
-  max-width: 600px; /* Limit the maximum width of the text box */
-  min-width: 300px; /* Optional: Set a minimum width for the text box */
-  margin-right: auto;
+  justify-content: center;
+  width: 100%;
 }
